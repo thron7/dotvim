@@ -32,25 +32,25 @@ set viminfo='10,\"0,:50,/10,n~/.viminfo
 
 " Key Mappings
 	" cycle through windows
-map <F12> 
-map <S-F12> W
+map <F12> <C-W><C-W>
+map <S-F12> <C-W>W
   " cycle through tabs
 map <silent><A-Right> :tabnext<CR>
 map <silent><A-Left>  :tabprevious<CR>
   " wrap lines
-map <F11> :set invwrap
-map! <F11> :set invwrapa
+map <F11> :set invwrap<CR>
+map! <F11> <Esc>:set invwrap<CR>a
 " <F10> is captured by Gnome Desktop
 	" save
-map <F9> :w
-map! <F9> :wa
+map <F9> :w<CR>
+map! <F9> <Esc>:w<CR>a
   " next buffer
-map <F8> :bnext
+map <F8> :bnext<CR>
   " previous buffer
-map <F7> :bNext
+map <F7> :bNext<CR>
   " format paragraph
 "map <F6> gqap
-"map! <F6> gqapa
+"map! <F6> <Esc>gqapa
   " tw=80
 map <F6> :set tw=80<CR>
 map <S-F6> :set tw=0<CR>
@@ -69,8 +69,8 @@ nmap <down> gj
 nmap k gk
 nmap j gj
   " typing macros
-map! {{ {}O	
-map! [[ []O	
+map! {{ {<CR>}<Esc>O	
+map! [[ [<CR>]<Esc>O	
   " svn commit in ex-mode
 cmap  ccc !svn ci -m"[BUG \#0000] " %
 
