@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/tmp/qx/qooxdoo.trunk/application/playground'
+let g:netrw_dirhist_2='/home/thron7/workspace/qooxdoo.1_3_x/documentation/manual/source'
+let g:netrw_dirhist_3='/home/thron7/workspace/qooxdoo.1_3_x/documentation/manual/source/pages/low_level'
